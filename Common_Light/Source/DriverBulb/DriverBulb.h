@@ -66,6 +66,8 @@ PUBLIC void         DriverBulb_vSetOnOff(bool_t bOn);
 PUBLIC void         DriverBulb_vSetColour(uint32 u32Red, uint32 u32Green, uint32 u32Blue)__attribute__((weak));
 
 /* Optional Interface Functions                        */
+PUBLIC void			DriverBulb_vTick(void);
+
 /* Stub out in implementation if no behaviour required */
 PUBLIC bool_t 	 	DriverBulb_bReady(void);
 PUBLIC int16 		DriverBulb_i16Analogue(uint8 u8Adc, uint16 u16AdcRead);

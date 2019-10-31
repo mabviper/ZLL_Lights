@@ -1,0 +1,6 @@
+*.bin
+*/Build/*.d
+*/Build/*.o
+*/Build/*.map
+*/Build/*.elf
+*/Build/*.bin

@@ -189,12 +189,12 @@ OS_TASK(APP_Commission_Task) {
 
     if (OS_eCollectMessage(APP_CommissionEvents, &sEvent) != OS_E_OK)
     {
-        //DBG_vPrintf(TRACE_COMMISSION, "\nError\n");
+        DBG_vPrintf(TRACE_COMMISSION, "\nError\n");
     }
 
     psNib = ZPS_psNwkNibGetHandle(ZPS_pvAplZdoGetNwkHandle());
 
-    //DBG_vPrintf(TRACE_COMMISSION, "\nInterPan LQI %d\n", sEvent.u8Lqi);
+    DBG_vPrintf(TRACE_COMMISSION, "\nInterPan LQI %d\n", sEvent.u8Lqi);
 
     switch (eState)
     {
