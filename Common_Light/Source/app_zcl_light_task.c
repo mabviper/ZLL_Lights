@@ -230,6 +230,9 @@ OS_TASK(Tick_Task)
     u32Tick10ms++;
     u32Tick1Sec++;
 
+    /* Provide processor cycles to any drivers that need time behaviour */
+	DriverBulb_vTick();
+
     /* Wrap the Tick10ms counter and provide 100ms ticks to cluster */
     if (u32Tick10ms > 9)
     {

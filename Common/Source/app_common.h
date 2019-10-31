@@ -43,6 +43,8 @@
 
 #ifdef RGB
 #include "App_Light_ColorLight.h"
+#elif WS2812
+#include "App_Light_WS2812.h"
 #else
 #include "App_Light_DimmableLight.h"
 #endif
